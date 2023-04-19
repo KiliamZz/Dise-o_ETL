@@ -1,0 +1,9 @@
+1.Se pretende crear una ETL que integre los datos del archivo BankChurners.csv y poder realizar un procesamiento a la data y realizar un cargue a un Data Lake.
+
+2.Fuentes de datos: La base de información a utilizar es BankChurners.csv el cual es un archivo plano que contiene 10000 clientes y sus diferentes datos
+
+3.Realizar la extracción de datos: realizar la extracción de datos de fuente BankChurners.csv mediante python usando la librería pandas
+
+4.Realizar la limpieza y transformación de datos: una vez que se han extraído los datos, se limpiarn y transforman para asegurarse de que sean coherentes y estén en el formato correcto para su posterior uso.
+
+5.Cargar los datos a la base de datos: después de limpiar y transformar los datos, los cargamos en una base de datos en postgres y también creamos un csv para su posterior análisis.

@@ -1,0 +1,43 @@
+Inicio
+
+Importar librería psycopg2
+
+Importar librería pandas
+
+Importar librería datetime
+
+Importar función categoria desde funciones.funcion_categoria
+
+Importar librería create_engine desde sqlalchemy
+
+Crear diccionario "params" con los parámetros de conexión a la base de datos origen
+
+Establecer la conexión a la base de datos origen con psycopg2.connect y usando los parámetros de conexión
+
+Crear string "consulta" con la consulta SQL a ejecutar
+
+Crear cursor para ejecutar la consulta SQL
+
+Establecer la conexión a la base de datos destino con create_engine
+
+Ejecutar la consulta a la base de datos origen con cursor.execute y la consulta SQL
+
+Obtener los nombres de las columnas con [i[0] for i in cursor.description]
+
+Asignar los resultados de la consulta a un dataframe con pd.DataFrame(cursor.fetchall(), columns = columnas)
+
+Crear columna "Income_Category_1" en el dataframe "datos" aplicando la función "categoria" a la columna "income_category"
+
+Crear columna "Fecha_creacion_datetime" en el dataframe "datos" con la fecha actual en formato datetime
+
+Crear columna "Fecha_creacion_Unixtimestamp" en el dataframe "datos" con la fecha actual en formato Unix timestamp
+
+Especificar el nombre de la tabla destino en la variable "tabla_destino"
+
+Insertar los datos del dataframe "datos" a la tabla destino con datos.to_sql
+
+Cerrar el cursor
+
+Cerrar la conexión a la base de datos origen
+
+Fin
